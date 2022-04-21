@@ -1,5 +1,7 @@
 public class Operation1 {
     public static void main(String[] args) {
+        //산술 연산자 연습
+
         int mathScore = 80;
         int engScore = 70;
 
