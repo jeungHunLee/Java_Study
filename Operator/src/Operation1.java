@@ -1,4 +1,4 @@
-public class Score {
+public class Operation1 {
     public static void main(String[] args) {
         int mathScore = 80;
         int engScore = 70;
