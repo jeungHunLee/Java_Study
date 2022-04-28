@@ -1,4 +1,4 @@
-package Condition;
+package Loop;
 
 public class While {
     public static void main(String[] args) {
