@@ -10,7 +10,7 @@ class Student2 {
     }
 
     public String toString() {
-        return studentID + "," + studentName;
+        return "학번: " + studentID + " 이름:" + studentName;
     }
     //equals() 메서드 재정의
     @Override
@@ -35,6 +35,11 @@ public class EqualTest {
         Student2 studentLee = new Student2(12345, "이철수");
         Student2 studentChul = studentLee;
         Student2 studentKim = new Student2(13579, "김영희");
+
+        //toString() 메서드 출력
+        System.out.println(studentLee);
+        System.out.println(studentChul);
+        System.out.println(studentKim);
 
         if (studentLee == studentChul) {
             System.out.println("studentLee와 studentChul의 주소는 같습니다.");
@@ -67,6 +72,7 @@ public class EqualTest {
         System.out.println("studentLee의 hashCode: " + studentLee.hashCode());
         System.out.println("studentKim의 hashCode: " + studentKim.hashCode());
 
+        //실제 인스턴스 주소값
         System.out.println("studentLee의 실제 주소값: " + System.identityHashCode(studentLee));
         System.out.println("studentKim의 실제 주소값: " +System.identityHashCode(studentKim));
     }
