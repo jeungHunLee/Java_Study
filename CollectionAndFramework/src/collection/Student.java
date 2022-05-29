@@ -29,3 +29,4 @@ public class Student {
         return studentName + " 학생의 학번은 " + studentId + "입니다.";
     }
 }
+
