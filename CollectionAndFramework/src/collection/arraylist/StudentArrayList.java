@@ -25,6 +25,7 @@ public class StudentArrayList {
                 return true;
             }
         }
+        //조건에 충족하는 이름이 없을 경우 실행
         System.out.println(studentName + "에 해당하는 학생의 정보가 없습니다.");
         return false;
     }
