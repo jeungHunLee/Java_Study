@@ -2,6 +2,7 @@ package collection.arraylist;
 
 import java.util.ArrayList;
 import collection.Student;
+import java.util.Iterator;
 
 public class StudentArrayList {
     private ArrayList<Student> arrayList;
@@ -29,6 +30,22 @@ public class StudentArrayList {
         System.out.println(studentName + "에 해당하는 학생의 정보가 없습니다.");
         return false;
     }
+
+    //Iterator를 사용하여 학생정보 삭제
+    /* public boolean removeStudent(String studentName) {
+        Iterator<Student> iterator = arrayList.iterator();
+        while (iterator.hasNext()) {
+            Student student = iterator.next();
+            String name = student.getStudentName();
+            if(name == studentName) {
+                arrayList.remove(student);
+                return true;
+            }
+        }
+
+        System.out.println(studentName + "에 해당하는 학생의 정보가 없습니다.");
+        return false;
+    } */
 
     //학생 정보 출력
     public void showAllMember() {
