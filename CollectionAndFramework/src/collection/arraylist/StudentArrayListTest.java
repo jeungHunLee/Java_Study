@@ -16,11 +16,11 @@ public class StudentArrayListTest {
        studentArrayList.addStudent(studentSon);
        studentArrayList.addStudent(studentPark);
 
-       studentArrayList.showAllMember();
+       studentArrayList.showAllStudent();
 
        //학생 정보 삭제
        studentArrayList.removeStudent("손다혜");
-       studentArrayList.showAllMember();
+       studentArrayList.showAllStudent();
     }
 }
 

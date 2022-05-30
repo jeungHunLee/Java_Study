@@ -48,7 +48,7 @@ public class StudentArrayList {
     } */
 
     //학생 정보 출력
-    public void showAllMember() {
+    public void showAllStudent() {
         for(Student student : arrayList) {
             System.out.println(student);
         }
