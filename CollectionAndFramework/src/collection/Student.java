@@ -1,10 +1,13 @@
 package collection;
 
+import java.util.Comparator;
 import java.util.Objects;
 
-public class Student {
+public class Student implements Comparable<Student>, Comparator<Student> {
     private String studentName;
     private int studentId;
+
+    public Student() {}
 
     public Student(String studentName, int studentId) {
         this.studentName = studentName;
@@ -47,5 +50,15 @@ public class Student {
         }
         return false;
     }
-}
 
+    //TreeSet에서 compareTo 메서드를 사용하여 오름차순 정렬(Comparable)
+    @Override
+    public int compareTo(Student student) {
+        return (this.studentName.compareTo(student.studentName));
+    }
+
+    //TreeSet에서 compare 메서드를 사용하여 내림차순 정렬(Comparator)
+    public int compare(Student student1, Student student2) {
+        return (student1.getStudentId() - student2.getStudentId()) * (-1);
+    }
+}
