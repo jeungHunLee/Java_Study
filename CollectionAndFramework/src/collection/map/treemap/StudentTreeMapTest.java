@@ -11,7 +11,7 @@ public class StudentTreeMapTest {
         Student studentSon = new Student("손다혜", 1003);
         Student studentPark = new Student("박찬영", 1004);
 
-        studentTreeMap.addStudent(studentLee);      //String 클래스에 미리 정의 되어있는 equals 메서드를 통해 오름차순 정렬
+        studentTreeMap.addStudent(studentLee);      //String 클래스에 미리 정의 되어있는 Comparable 메서드를 통해 오름차순 정렬
         studentTreeMap.addStudent(studentKim);      //TreeMap에서 정렬 기준은 key값인 studentName
         studentTreeMap.addStudent(studentSon);
         studentTreeMap.addStudent(studentPark);
