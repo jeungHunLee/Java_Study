@@ -17,7 +17,7 @@ public class StudentHashMap {
 
     public boolean removeStudent(String studentName) {
         if(hashMap.containsKey(studentName)) {  //hashMap이 studentName을 key로 가지고 있다면
-            hashMap.remove(studentName);    //hashMap에서 studentName 삭제
+            hashMap.remove(studentName);    //hashMap에서 studentName에 해당하는 요소 삭제
             return true;
         }
         System.out.println(studentName + "학생은 존재하지 않습니다.");

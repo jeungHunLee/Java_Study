@@ -43,6 +43,7 @@ public class Student implements Comparable<Student>, Comparator<Student> {
         if (object instanceof Student) {
             Student student = (Student) object;
             if (this.studentId == student.studentId) {
+                //새로 추가하는 객체의 studentId와 기존에 존재하는 객체의 studentId를 비교
                 return true;
             } else {
                 return false;
