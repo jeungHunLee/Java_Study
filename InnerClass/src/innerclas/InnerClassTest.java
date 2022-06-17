@@ -25,6 +25,7 @@ class OutClass {
         //static void innerStaticMethod() {};   정적 메서드 구현 불가
     }
 
+    //정적 내부 클래스
     static class staticInnerClass {     //외부 클래스 생성에 관계 없이 메모리에 할당
         String innerStr2 = "정적 내부 클래스의 인스턴스 변수입니다.";    //정적 내부 클래스의 인스턴스 변수 선언
         static String innerStaticStr2 = "정적 내부 클래스의 정적 변수입니다.";  //정적 내부 클래스의 정적 변수 선언
@@ -35,13 +36,14 @@ class OutClass {
             System.out.println(innerStaticStr2);
         }
 
-        static void staticMethod() {   //정적 내부 클래스의 생서과 관계 없이 메모리에 할당
+        //정적 메서드
+        static void staticMethod() {   //정적 내부 클래스의 생성과 관계 없이 메모리에 할당
             System.out.println(innerStaticStr2);
             System.out.println(outStaticStr);
         }
     }
 
-    public void innerPrint() {  //인스턴스 내부 클래스의 메서드를 수행하는 외부 메서드
+    public void innerMethodPrint() {  //인스턴스 내부 클래스의 메서드를 수행하는 외부 메서드
         innerClass.innerMethod();
     }
 }
@@ -49,7 +51,7 @@ class OutClass {
 public class InnerClassTest {
     public static void main(String[] args) {
         OutClass out = new OutClass();
-        out.innerPrint();
+        out.innerMethodPrint();
         System.out.println();
 
         OutClass.staticInnerClass staticInnerClass = new OutClass.staticInnerClass();
