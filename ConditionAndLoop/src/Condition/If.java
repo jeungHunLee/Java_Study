@@ -6,7 +6,7 @@ public class If {
 
         int score = 78;
 
-        if(score >= 90) {
+        if(score >= 90) {   //하나의 조건 만족시 나머지 조건은 확인 X
             System.out.println("A 학점입니다.");
         }
         else if(score >= 80) {
